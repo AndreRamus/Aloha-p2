@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Aloha</title>
-	<link rel="stylesheet" href="css/style.css">
+
+
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/flickity.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<a class:"maincontent" href="#maincontent"></a>
 
 	<!--Header-->
-	<header class="header container">
+	<header class="header container" id="header">
 
 		<img class="aloha" src="assets/images/aloha-logo.svg">
 		<img class="cart" src="assets/images/cart-icon.svg">
@@ -29,9 +32,7 @@
 		</nav>
 		<div>
 	</header>
-
 	<!--Banner Section -->
-
 	<section class="banner">
 		<div class="background container">
 		<h1 class="txt-one">New Collection</h1>
@@ -57,6 +58,9 @@
 <main id="maincontent" class="site-main" tabindex="-1">
 
 </main>
+<div id="content">
+
+
 		<div class="m-list">
 			<p class="m-item wide-prod">Men's</p>
 			<p class="m-item sq-prod">Trends</p>
@@ -68,118 +72,16 @@
 			<p class="w-item sq-prod">Bags</p>
 		</div>
 	</div>
-
+</div>
 
 <!--Session Featured -->
+	<!-- <section class="container" id="Most-loved">-->
 
-	<!-- <section class="container" id="Most-loved">
-		<div class="prod-features clearfix container">
-
-			<h2 class="MLoved-text"><em>Most-Loved <em class="strong"><strong>Products</strong></h2>
-				<ul class="carousel" data-flickity>
-					<div class="carousel-cell">
-							<li>
-								<a href="#">
-									<p><img class="prod-image" src="assets/images/stretch-knit-dress.jpg"></p>
-									<p class="prod-type">Dresses</p>
-									<h3 class="prod-name">Stretch Knit Dress</h3>
-									<p class="price">$169.00</p>
-								</a>
-								<button class="buy">Add To Cart</button>
-							</li>
-					</div>
-
-					<div class="carousel-cell">
-						<li>
-							<a href="#">
-								<p><img class="prod-image" src="assets/images/cotton-blue-shirt.jpg"></p>
-								<p class="prod-type">Shirts</p>
-								<h3 class="prod-name">Cotton Blue Shirt</h3>
-								<p class="price">$89.00</p>
-							</a>
-							<button class="buy">Add To Cart</button>
-						</li>
+			 <div class="clearfix container " id="Most-loved">
+				 <div class="loved-title">
+				<h2>Most-Loved<span class="heavy"> Products</span></h2>
 				</div>
-
-					<div class="carousel-cell">
-						<li>
-							<a href="#">
-								<p><img class="prod-image" src="assets/images/checked-stretch-dress.jpg"></p>
-								<p class="prod-type">Dresses</p>
-								<h3 class="prod-name">hecked Stretch Dress</h3>
-								<p class="price">$129.00</p>
-							</a>
-							<button  class="buy">Add To Cart</button>
-						</li>
-				</div>
-
-				 <div class="carousel-cell">
-						<li>
-							<a href="#">
-								<p><img class="prod-image" src="assets/images/blue-hipster-backpack.jpg"></p>
-								<p class="prod-type">Bags</p>
-								<h3 class="prod-name">Blue Hipster Backpack</h3>
-								<p class="price">$69.00</p>
-							</a>
-							<button class="buy">Add To Cart</button>
-						</li>
-				</div>
-					<div class="carousel-cell">
-						<li>
-							<a href="#">
-								<img class="product_img" src="assets/images/demin-overall-shorts.jpg" alt="Demin">
-								<p  class="prod-type">Demin</p>
-								<h3 class="prod-name">Demin Overall Shorts</h3>
-								<p class="price">$89.00</p>
-							</a>
-							<button class="buy">Add To Cart</button>
-						</li>
-					</div>
-					<div class="carousel-cell">
-						<li>
-							<a href="#">
-								<img class="product_img" src="assets/images/pink-dotted-dress.jpg" alt="Dresses">
-								<p  class="prod-type">Dresses</p>
-								<h3 class="prod-name">Pink Dotted Dress</h3>
-								<p class="price">$99.00</p>
-							</a>
-							<button class="buy">Add To Cart</button>
-						</li>
-				</div>
-
-					<div class="carousel-cell">
-						<li>
-							<a href="#">
-								<img class="product_img" src="assets/images/blue-silk-dress.jpg" alt="Dresses">
-								<p  class="prod-type">Dresses</p>
-								<h3 class="prod-name">Blue Silk Dress</h3>
-								<p class="price">$119.00</p>
-							</a>
-							<button class="buy">Add To Cart</button>
-						</li>
-					</div>
-					<div class="carousel-cell">
-						<li>
-							<a href="#">
-								<img class="product_img" src="assets/images/cotton-yellow-tshirt.jpg" alt="Shirts">
-								<p  class="prod-type">Shirts</p>
-								<h3 class="prod-name">Cotton Yellow Tshirt</h3>
-								<p class="price">$69.00</p>
-							</a>
-							<button class="buy">Add To Cart</button>
-						</li>
-				</div>
-				</ul>
-		</div>
-	</section> -->
-
-	<section class="container" id="Most-loved">
-		 <div class="clearfix">
-			 <div class="clearfix container">
-				 <div class:"loved-title">
-				<h2>Most-Loved <span class="heavy">Products</span></h2>
-				</div>
-				<div class="product-list carousel" data-flickity>
+				<div class="product-list main-carousel">
 					 <div class="carousel-cell">
 							<img src="assets/images/stretch-knit-dress.jpg" alt="Image of stretch knit dress" />
 							<p class="product-type">Dresses</p>
@@ -239,6 +141,7 @@
 				</div>
 		 </div>
 	</section>
+
 <!--Newsletter Session-->
 	<section class="newsletter" id="updates">
 		<div class="news container">
@@ -294,8 +197,8 @@
 <!--java Script Files-->
 	<!--<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>-->
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-	<script src="./js/flickity.pkgd.min.js"></script>
-<script type="text/javascript" src="./js/main.js"></script>
+		<script src="./js/flickity.pkgd.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
 
 
 </body>

@@ -1,3 +1,6 @@
+//alert by clicking on subscribe
+
+
 //smooth scroll
 $(document).ready(function(){
    $(function() {
@@ -15,3 +18,13 @@ $(document).ready(function(){
      });
    });
  });
+
+//Carousel
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  imagesLoaded:true,
+  wrapAround: true,
+  autoPlay: true
+});
